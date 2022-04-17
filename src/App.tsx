@@ -7,6 +7,7 @@ import Posts from 'components/pages/POSTS';
 import Post from 'components/pages/POST';
 import PostIndex from 'components/pages/POSTINDEX';
 import NoMatch from 'components/pages/NOMATCH';
+import Button from 'components/atoms/Buttons';
 
 //下記URLのコードです
 //https://reffect.co.jp/react/react-router-6
@@ -29,6 +30,13 @@ function App() {
   return (
     <div className='App'>
       <h1 className='text-green-600'>Hello React Router v6</h1>
+      <Button
+        className='text-blue-500 px-2 border border-blue-500 font-semibold rounded hover:bg-blue-100 mx-auto'
+        label={'test'}
+        onClick={() => {
+          console.log('成功');
+        }}
+      />
       <ul>
         <li>
           <CustomLink to='/'>Home</CustomLink>
