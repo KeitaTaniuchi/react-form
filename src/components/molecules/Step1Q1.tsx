@@ -8,7 +8,7 @@ type Props = {
 };
 
 const Step1Q1: React.FC<Props> = ({ className }) => {
-  const options: RadioButtonType = ['men', 'women'];
+  const options: RadioButtonType = ['男性', '女性'];
 
   return (
     <div className={className}>
