@@ -1,17 +1,17 @@
 import React from 'react';
+import DropDownListType from 'types/dropDownList';
 
-type DropDownListProps = {
+type Props = {
   className: string;
-  dropDownListOptions: string[];
+  options: DropDownListType;
   name: string;
-  label: String;
 };
 
-const DropDownList: React.FC<DropDownListProps> = ({ className, name, dropDownListOptions, label }) => {
+const DropDownList: React.FC<Props> = ({ className, name, options }) => {
   return (
     <select name={name}>
-      {dropDownListOptions.map((dropDownListOption, index) => (
-        <option>{dropDownListOption}</option>
+      {options.map((option, index) => (
+        <option key={index}>{option.label}</option>
       ))}
     </select>
   );

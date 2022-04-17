@@ -1,11 +1,11 @@
 import React from 'react';
 
-type LinkProps = {
+type Props = {
   className: string;
   label: String;
 };
 
-const Button: React.FC<LinkProps> = ({ className, label }) => {
+const Button: React.FC<Props> = ({ className, label }) => {
   return <link className={className}>{label}</link>;
 };
 
