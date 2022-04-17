@@ -9,11 +9,13 @@ type Props = {
 
 const DropDownList: React.FC<Props> = ({ className, name, options }) => {
   return (
-    <select name={name}>
-      {options.map((option, index) => (
-        <option key={index}>{option.label}</option>
-      ))}
-    </select>
+    <form>
+      <select name={name}>
+        {options.map((option, index) => (
+          <option key={index}>{option.label}</option>
+        ))}
+      </select>
+    </form>
   );
 };
 
