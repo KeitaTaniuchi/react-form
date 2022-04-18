@@ -1,16 +1,12 @@
 import React from 'react';
 
 type Props = {
-  className: string;
+  className?: string;
   stepNumber: number;
 };
 
 const StepNumber: React.FC<Props> = ({ className, stepNumber }) => {
-  return (
-    <span className={className}>
-      <p>{`STEP${stepNumber}`}</p>
-    </span>
-  );
+  return <span className={className}>{`STEP${stepNumber}`}</span>;
 };
 
 export default StepNumber;

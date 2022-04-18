@@ -1,16 +1,12 @@
 import React from 'react';
 
 type Props = {
-  className: string;
+  className?: string;
   questionDetail: string;
 };
 
 const QuestionDetail: React.FC<Props> = ({ className, questionDetail }) => {
-  return (
-    <div className={className}>
-      <p>questionDetail</p>
-    </div>
-  );
+  return <p className={className}>{questionDetail}</p>;
 };
 
 export default QuestionDetail;

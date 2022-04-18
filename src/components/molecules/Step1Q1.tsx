@@ -1,10 +1,10 @@
 import React from 'react';
-import Step1Q1Label from 'components/atoms/QuestionLabels/Step1Q1Label';
 import RadioButton from 'components/atoms/Buttons/RadioButton';
+import questionLabels from 'utils/questionLabels';
 import RadioButtonType from 'types/radioButton';
 
 type Props = {
-  className: string;
+  className?: string;
 };
 
 const Step1Q1: React.FC<Props> = ({ className }) => {
@@ -12,9 +12,9 @@ const Step1Q1: React.FC<Props> = ({ className }) => {
 
   return (
     <div className={className}>
-      <Step1Q1Label className={'step1Q1Label'} />
+      <p className='mb-2'>{questionLabels.step1.q1}</p>
       <RadioButton
-        className={'step1Q1Radio'}
+        className={''}
         options={options}
         name={'step1q1'}
         onChange={() => {

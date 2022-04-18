@@ -7,7 +7,7 @@ type Props = {
 
 const NewRegistrationLink: React.FC<Props> = ({ className }) => {
   return (
-    <Link to='/new-registration' className={className}>
+    <Link to='/new-registration-link:' className={className}>
       新規登録
     </Link>
   );

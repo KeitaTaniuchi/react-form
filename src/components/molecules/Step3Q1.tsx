@@ -1,16 +1,20 @@
 import React from 'react';
-import Step3Q1Label from 'components/atoms/QuestionLabels/Step2Q3Label';
+import questionLabels from 'utils/questionLabels';
 import TextArea from 'components/atoms/TextArea';
 
 type Props = {
-  className: string;
+  className?: string;
 };
 
 const Step3Q1: React.FC<Props> = ({ className }) => {
+  const idAndFor: string = 'step3-q1';
+
   return (
     <div className={className}>
-      <Step3Q1Label className={'step3Q1Label'} />
-      <TextArea className={'step3Q1TextArea'} />
+      <label htmlFor={idAndFor} className='block mb-2'>
+        {questionLabels.step3.q1}
+      </label>
+      <TextArea id={idAndFor} className={'w-full h-full'} />
     </div>
   );
 };

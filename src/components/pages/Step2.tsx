@@ -1,14 +1,12 @@
 import React from 'react';
-import Step2Q1 from 'components/molecules/Step2Q1';
-import Step2Q2 from 'components/molecules/Step2Q2';
-import Step2Q3 from 'components/molecules/Step2Q3';
+import Step2QuestionContainer from 'components/organisms/Step2QuestionContainer';
 
 const Step1 = () => {
   return (
     <>
-      <Step2Q1 className='step2Q1' />
-      <Step2Q2 className='step2Q2' />
-      <Step2Q3 className='step2Q3' />
+      <Step2QuestionContainer />
+      <button>進む</button>
+      <button>戻る</button>
     </>
   );
 };
