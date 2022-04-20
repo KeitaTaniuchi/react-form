@@ -3,12 +3,7 @@ import dayjs from 'dayjs';
 dayjs.locale('ja');
 
 const createYears = (): DropDownListType => {
-  const years = [
-    {
-      value: 0,
-      label: '-年を選択してください-',
-    },
-  ];
+  const years = [];
   for (let i = dayjs().year(); i >= dayjs().year() - 100; i--) {
     if (i > 2018) {
       years.push({ value: i, label: `${i}年 (令和${i - 2018}年)` });
@@ -24,12 +19,7 @@ const createYears = (): DropDownListType => {
 };
 
 const createMonths = (): DropDownListType => {
-  const months = [
-    {
-      value: 0,
-      label: '-月を選択してください-',
-    },
-  ];
+  const months = [];
   for (let i = 1; i <= 12; i++) {
     months.push({ value: i, label: `${i}月` });
   }
@@ -37,12 +27,7 @@ const createMonths = (): DropDownListType => {
 };
 
 const createDays = (year: number, month: number): DropDownListType => {
-  const days = [
-    {
-      value: 0,
-      label: '-日を選択してください-',
-    },
-  ];
+  const days = [];
   /* 初期値 */
   if (year === 0 || month === 0)
     for (let i = 1; i <= 31; i++) {

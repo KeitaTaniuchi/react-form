@@ -1,44 +1,25 @@
 import React from 'react';
 import DropDownListType from 'types/dropDownList';
+import Select from 'react-select';
 
 type Props = {
+  placeHolder: string;
   options: DropDownListType;
   name: string;
   setState: (value: number) => void;
 };
 
-const DropDownList: React.FC<Props> = ({ options, name, setState }) => {
+const DropDownList: React.FC<Props> = ({ placeHolder, options, name, setState }) => {
   return (
     <form>
-      <select
+      <Select
+        placeholder={placeHolder}
         name={name}
-        onChange={(e: React.FormEvent<HTMLSelectElement>) => {
-          //「e.currentTarget.value」の型がstringのため、number型に変換
-          //なぜstring型なのかは不明
-          setState(Number(e.currentTarget.value));
+        options={options}
+        onChange={(option: any) => {
+          setState(option.value);
         }}
-        className='form-select appearance-none
-      block
-      w-full
-      px-4
-      py-2
-      text-base
-      font-normal
-      text-gray-700
-      bg-white bg-clip-padding bg-no-repeat
-      border border-solid border-gray-300
-      rounded
-      transition
-      ease-in-out
-      m-0
-      focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none'
-      >
-        {options.map((option, index) => (
-          <option key={index} value={option.value} disabled>
-            {option.label}
-          </option>
-        ))}
-      </select>
+      />
     </form>
   );
 };
