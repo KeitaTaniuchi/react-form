@@ -7,8 +7,10 @@ const Step1QuestionContainer = () => {
   return (
     <>
       <QuestionOuterBorder stepNumber={1} questionDetail={'お客様の情報を入力してください'}>
-        <Step1Q1 className='mb-10' />
-        <Step1Q2 className='' />
+        <div className='mb-10'>
+          <Step1Q1 />
+        </div>
+        <Step1Q2 />
       </QuestionOuterBorder>
     </>
   );

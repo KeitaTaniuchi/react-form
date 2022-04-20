@@ -4,7 +4,7 @@ import Step2QuestionContainer from 'components/organisms/Step2QuestionContainer'
 import BackPrevPageButton from 'components/atoms/Buttons/BackPrevPageButton';
 import GoNextPageButton from 'components/atoms/Buttons/GoNextPageButton';
 
-const Step1 = () => {
+const Step2 = () => {
   const navigate = useNavigate();
 
   return (
@@ -26,4 +26,4 @@ const Step1 = () => {
   );
 };
 
-export default Step1;
+export default Step2;

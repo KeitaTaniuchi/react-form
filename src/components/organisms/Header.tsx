@@ -8,7 +8,7 @@ const Header = () => {
       <div className='mx-auto flex justify-between w-10/12'>
         <p className='text-4xl'>Sample App</p>
         <div>
-          <LoginLink className={'login'} /> | <NewRegistrationLink className={'newRegistration'} />
+          <LoginLink /> | <NewRegistrationLink />
         </div>
       </div>
     </header>

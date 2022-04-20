@@ -4,24 +4,23 @@ import questionLabels from 'utils/questionLabels';
 import RadioButtonType from 'types/radioButton';
 
 type Props = {
-  className?: string;
+  setQ2Checked: (q1Checked: boolean) => void;
 };
 
-const Step2Q2: React.FC<Props> = ({ className }) => {
+const Step2Q2: React.FC<Props> = ({ setQ2Checked }) => {
   const options: RadioButtonType = ['はい', 'いいえ'];
 
   return (
-    <div className={className}>
+    <>
       <p className='mb-2'>{questionLabels.step2.q2}</p>
       <RadioButton
-        className={'step2Q2Radio'}
         options={options}
         name={'step2q2'}
         onChange={() => {
-          console.log('Step2Q2');
+          setQ2Checked(true);
         }}
       />
-    </div>
+    </>
   );
 };
 

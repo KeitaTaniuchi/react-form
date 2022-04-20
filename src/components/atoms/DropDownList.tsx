@@ -2,16 +2,21 @@ import React from 'react';
 import DropDownListType from 'types/dropDownList';
 
 type Props = {
-  className?: string;
   options: DropDownListType;
   name: string;
+  setState: (value: number) => void;
 };
 
-const DropDownList: React.FC<Props> = ({ className, name, options }) => {
+const DropDownList: React.FC<Props> = ({ options, name, setState }) => {
   return (
-    <form className={className}>
+    <form>
       <select
         name={name}
+        onChange={(e: React.FormEvent<HTMLSelectElement>) => {
+          //「e.currentTarget.value」の型がstringのため、number型に変換
+          //なぜstring型なのかは不明
+          setState(Number(e.currentTarget.value));
+        }}
         className='form-select appearance-none
       block
       w-full
@@ -29,7 +34,9 @@ const DropDownList: React.FC<Props> = ({ className, name, options }) => {
       focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none'
       >
         {options.map((option, index) => (
-          <option key={index}>{option.label}</option>
+          <option key={index} value={option.value} disabled>
+            {option.label}
+          </option>
         ))}
       </select>
     </form>

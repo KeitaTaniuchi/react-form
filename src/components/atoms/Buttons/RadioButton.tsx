@@ -2,15 +2,14 @@ import React from 'react';
 import RadioButtonType from 'types/radioButton';
 
 type Props = {
-  className?: string;
   options: RadioButtonType;
   name: string;
   onChange: React.ChangeEventHandler<HTMLInputElement>;
 };
 
-const RadioButton: React.FC<Props> = ({ options, className, name, onChange }) => {
+const RadioButton: React.FC<Props> = ({ options, name, onChange }) => {
   return (
-    <form className={className}>
+    <form>
       {options.map((option, index) => (
         <label key={index} className='mr-8'>
           <input type='radio' name={name} value={option} onChange={onChange} className='mr-2' />

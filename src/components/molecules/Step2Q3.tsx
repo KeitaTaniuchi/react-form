@@ -14,7 +14,6 @@ const Step2Q3: React.FC<Props> = ({ className }) => {
     <div className={className}>
       <p className='mb-2'>{questionLabels.step2.q3}</p>
       <RadioButton
-        className={'step2Q3Radio'}
         options={options}
         name={'step2q3'}
         onChange={() => {

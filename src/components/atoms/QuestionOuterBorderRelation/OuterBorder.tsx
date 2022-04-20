@@ -1,12 +1,11 @@
 import React from 'react';
 
 type Props = {
-  className?: string;
   children: React.ReactNode;
 };
 
-const QuestionOuterBorder: React.FC<Props> = ({ className, children }) => {
-  return <div className={className}>{children}</div>;
+const QuestionOuterBorder: React.FC<Props> = ({ children }) => {
+  return <div className='border border-blue-500 rounded relative'>{children}</div>;
 };
 
 export default QuestionOuterBorder;

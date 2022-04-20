@@ -2,10 +2,9 @@ import React from 'react';
 
 type Props = {
   id: string;
-  className?: string;
 };
 
-const TextArea: React.FC<Props> = ({ id, className }) => {
+const TextArea: React.FC<Props> = ({ id }) => {
   return (
     <textarea
       id={id}

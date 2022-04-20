@@ -2,14 +2,16 @@ import React from 'react';
 import QuestionOuterBorder from 'components/molecules/QuestionOuterBorder';
 import Step3Q1 from 'components/molecules/Step3Q1';
 
-const Step1QuestionContainer = () => {
+const Step3QuestionContainer = () => {
   return (
     <>
       <QuestionOuterBorder stepNumber={3} questionDetail={'ご相談内容を入力してください'}>
-        <Step3Q1 className='mb-10' />
+        <div className='mb-10'>
+          <Step3Q1 />
+        </div>
       </QuestionOuterBorder>
     </>
   );
 };
 
-export default Step1QuestionContainer;
+export default Step3QuestionContainer;

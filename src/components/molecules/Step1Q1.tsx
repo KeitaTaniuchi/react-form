@@ -1,27 +1,25 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import context from 'App';
 import RadioButton from 'components/atoms/Buttons/RadioButton';
 import questionLabels from 'utils/questionLabels';
 import RadioButtonType from 'types/radioButton';
 
-type Props = {
-  className?: string;
-};
+/* const { step1Q1Answer, setStep1Q1Answer } = useContext(context); */
 
-const Step1Q1: React.FC<Props> = ({ className }) => {
+const Step1Q1: React.FC = () => {
   const options: RadioButtonType = ['男性', '女性'];
 
   return (
-    <div className={className}>
+    <>
       <p className='mb-2'>{questionLabels.step1.q1}</p>
       <RadioButton
-        className={''}
         options={options}
         name={'step1q1'}
         onChange={() => {
           console.log('Step1Q1');
         }}
       />
-    </div>
+    </>
   );
 };
 

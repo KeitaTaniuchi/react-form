@@ -1,9 +1,8 @@
+import DropDownListType from 'types/dropDownList';
 import dayjs from 'dayjs';
 dayjs.locale('ja');
 
-type DateDropDownListOptions = { value: number; label: string }[];
-
-const createYears = (): DateDropDownListOptions => {
+const createYears = (): DropDownListType => {
   const years = [
     {
       value: 0,
@@ -24,7 +23,7 @@ const createYears = (): DateDropDownListOptions => {
   return years;
 };
 
-const createMonths = (): DateDropDownListOptions => {
+const createMonths = (): DropDownListType => {
   const months = [
     {
       value: 0,
@@ -37,7 +36,7 @@ const createMonths = (): DateDropDownListOptions => {
   return months;
 };
 
-const createDays = (year: number, month: number): DateDropDownListOptions => {
+const createDays = (year: number, month: number): DropDownListType => {
   const days = [
     {
       value: 0,
