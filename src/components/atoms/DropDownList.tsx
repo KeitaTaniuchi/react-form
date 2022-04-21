@@ -17,6 +17,7 @@ const DropDownList: React.FC<Props> = ({ placeHolder, options, name, setState })
         name={name}
         options={options}
         onChange={(option: any) => {
+          /* どの型を定義すればよいかわからなかったので、any型にしています */
           setState(option.value);
         }}
       />

@@ -6,9 +6,10 @@ type Props = {
 
 const TextArea: React.FC<Props> = ({ id }) => {
   return (
-    <textarea
-      id={id}
-      className='form-control
+    <div className='h-full'>
+      <textarea
+        id={id}
+        className='
         block
         w-full
         h-full
@@ -22,9 +23,9 @@ const TextArea: React.FC<Props> = ({ id }) => {
         rounded
         transition
         ease-in-out
-        m-0
         focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none'
-    ></textarea>
+      ></textarea>
+    </div>
   );
 };
 
