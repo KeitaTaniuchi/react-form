@@ -1,3 +1,3 @@
-type DropDownListType = ReadonlyArray<{ value: number; label: string }>;
+type DropDownListType = Readonly<{ value: number; label: string }>;
 
 export default DropDownListType;

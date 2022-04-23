@@ -9,15 +9,13 @@ import NoMatch from 'components/pages/NoMatch';
 function App() {
   return (
     <div className='App'>
-      <React.StrictMode>
-        <Header />
-        <Routes>
-          <Route path='/step1' element={<Step1 />} />
-          <Route path='/step2' element={<Step2 />} />
-          <Route path='/step3' element={<Step3 />} />
-          <Route path='*' element={<NoMatch />} />
-        </Routes>
-      </React.StrictMode>
+      <Header />
+      <Routes>
+        <Route path='/step1' element={<Step1 />} />
+        <Route path='/step2' element={<Step2 />} />
+        <Route path='/step3' element={<Step3 />} />
+        <Route path='*' element={<NoMatch />} />
+      </Routes>
     </div>
   );
 }
