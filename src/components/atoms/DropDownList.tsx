@@ -16,7 +16,7 @@ const DropDownList: React.FC<Props> = ({ placeHolder, options, name, setDropDown
         placeholder={placeHolder}
         name={name}
         options={options}
-        onChange={(option: DropDownListType) => {
+        onChange={(option: /* NonNullable<DropDownListType> */ any) => {
           /* 型エラーを解消するために、ライブラリ名「react-select」の型定義を一部変更しています */
           /* (変更した型定義の定義場所) /node_modules/react-select/dist/declarations/src/types.d.ts */
           setDropDownValue(option.value);

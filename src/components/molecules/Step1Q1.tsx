@@ -1,5 +1,4 @@
-import React, { useContext } from 'react';
-import context from 'App';
+import React from 'react';
 import RadioButton from 'components/atoms/Buttons/RadioButton';
 import questionLabels from 'utils/questionLabels';
 import RadioButtonType from 'types/radioButton';
