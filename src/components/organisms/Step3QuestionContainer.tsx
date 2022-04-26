@@ -1,5 +1,5 @@
 import React from 'react';
-import QuestionOuterBorder from 'components/molecules/QuestionOuterBorder';
+import QuestionOuterBorder from 'components/organisms/QuestionOuterBorder';
 import Step3Q1 from 'components/molecules/Step3Q1';
 
 const Step3QuestionContainer = () => {

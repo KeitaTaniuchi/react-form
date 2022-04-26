@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import QuestionOuterBorder from 'components/molecules/QuestionOuterBorder';
+import QuestionOuterBorder from 'components/organisms/QuestionOuterBorder';
 import Step2Q1 from 'components/molecules/Step2Q1';
 import Step2Q2 from 'components/molecules/Step2Q2';
 import Step2Q3 from 'components/molecules/Step2Q3';

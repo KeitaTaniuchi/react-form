@@ -1,6 +1,5 @@
 import React from 'react';
-import LoginLink from 'components/atoms/Links/LoginLink';
-import NewRegistrationLink from 'components/atoms/Links/NewRegistrationLink';
+import CommonLink from 'components/atoms/CommonLink';
 
 const Header = () => {
   return (
@@ -8,7 +7,7 @@ const Header = () => {
       <div className='mx-auto flex justify-between w-10/12'>
         <p className='text-4xl'>Sample App</p>
         <div>
-          <LoginLink /> | <NewRegistrationLink />
+          <CommonLink to={'/login'} label={'ログイン'} /> | <CommonLink to={'/new-registration'} label={'新規登録'} />
         </div>
       </div>
     </header>

@@ -1,5 +1,5 @@
 import React from 'react';
-import RadioButton from 'components/atoms/Buttons/RadioButton';
+import RadioButton from 'components/atoms/RadioButton';
 import questionLabels from 'utils/questionLabels';
 import RadioButtonType from 'types/radioButton';
 
