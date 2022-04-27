@@ -1,27 +1,18 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
-import Step3QuestionContainer from 'components/organisms/Step3QuestionContainer';
-import Button from 'components/atoms/Button';
+import QuestionOuterBorder from 'components/organisms/QuestionOuterBorder';
+import Step3Q1 from 'components/organisms/Step3Q1';
+import GoNextPageButton from 'components/molecules/GoNextPageButton';
+import BackPrevPageButton from 'components/molecules/BackPrevPageButton';
 
 const Step3 = () => {
-  const navigate = useNavigate();
-
   return (
     <div className='mt-10 mx-auto w-9/12'>
-      <Step3QuestionContainer />
+      <QuestionOuterBorder stepNumber={3} questionDetail={'ご相談内容を入力してください'}>
+        <Step3Q1 />
+      </QuestionOuterBorder>
       <div className='mt-10 flex  space-x-20 justify-center'>
-        <Button
-          onClick={() => {
-            navigate('/step2');
-          }}
-          label={'前に戻る　＞'}
-        />
-        <Button
-          onClick={() => {
-            navigate('/step1');
-          }}
-          label={'次に進む　＞'}
-        />
+        <BackPrevPageButton path={'/step2'} />
+        <GoNextPageButton path={'/step1'} />
       </div>
     </div>
   );

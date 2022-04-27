@@ -13,6 +13,7 @@ const DropDownList: React.FC<Props> = ({ placeHolder, options, name, setDropDown
     <form>
       <select
         name={name}
+        defaultValue={placeHolder}
         onChange={(e: React.FormEvent<HTMLSelectElement>) => {
           //「e.currentTarget.value」の型がstringのため、number型に変換
           //なぜstring型なのかは不明
@@ -34,9 +35,7 @@ const DropDownList: React.FC<Props> = ({ placeHolder, options, name, setDropDown
       m-0
       focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none'
       >
-        <option disabled selected>
-          {placeHolder}
-        </option>
+        <option disabled>{placeHolder}</option>
         {options.map((option, index) => (
           <option key={index} value={option.value} placeholder={placeHolder}>
             {option.label}
