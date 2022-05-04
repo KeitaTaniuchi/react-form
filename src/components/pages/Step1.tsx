@@ -6,14 +6,14 @@ import GoNextPageButton from 'components/molecules/GoNextPageButton';
 
 const Step1 = () => {
   return (
-    <div className='mt-10 mx-auto w-9/12'>
+    <div className=' mx-auto mt-10 w-9/12'>
       <QuestionOuterBorder stepNumber={1} questionDetail={'お客様の情報を入力してください'}>
         <div className='mb-10'>
           <Step1Q1 />
         </div>
         {<Step1Q2 />}
       </QuestionOuterBorder>
-      <div className='mt-10 flex  space-x-20 justify-center'>
+      <div className=' flex mt-10 space-x-20 justify-center'>
         <GoNextPageButton path={'/step2'} />
       </div>
     </div>

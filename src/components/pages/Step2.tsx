@@ -19,7 +19,7 @@ const Step2 = () => {
   };
 
   return (
-    <div className='mt-10 mx-auto w-9/12'>
+    <div className='mx-auto mt-10 w-9/12'>
       <QuestionOuterBorder stepNumber={2} questionDetail={'以下にお答えください'}>
         <Step2Q1 setQ1Checked={setQ1Checked} />
         <div className={`mt-10 ${q2Show()}`}>
@@ -29,7 +29,7 @@ const Step2 = () => {
           <Step2Q3 />
         </div>
       </QuestionOuterBorder>
-      <div className='mt-10 flex  space-x-20 justify-center'>
+      <div className='mt-10 flex  justify-center space-x-20'>
         <BackPrevPageButton path={'/step1'} />
         <GoNextPageButton path={'/step3'} />
       </div>

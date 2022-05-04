@@ -6,11 +6,11 @@ import BackPrevPageButton from 'components/molecules/BackPrevPageButton';
 
 const Step3 = () => {
   return (
-    <div className='mt-10 mx-auto w-9/12'>
+    <div className='mx-auto mt-10 w-9/12'>
       <QuestionOuterBorder stepNumber={3} questionDetail={'ご相談内容を入力してください'}>
         <Step3Q1 />
       </QuestionOuterBorder>
-      <div className='mt-10 flex  space-x-20 justify-center'>
+      <div className='mt-10 flex  justify-center space-x-20'>
         <BackPrevPageButton path={'/step2'} />
         <GoNextPageButton path={'/step1'} />
       </div>

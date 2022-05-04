@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import Button from 'components/atoms/Button';
+import Button from 'components/atoms/Button/index';
 
 type Props = {
   path: string;
