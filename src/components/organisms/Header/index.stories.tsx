@@ -1,12 +1,12 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import Link from 'components/atoms/Link/index';
+import Header from 'components/organisms/Header/index';
 import { MemoryRouter } from 'react-router-dom';
 
 export default {
-  title: 'Atoms/Link',
-  component: Link,
+  title: 'organisms/Header',
+  component: Header,
   decorators: [
     (Story) => (
       <MemoryRouter>
@@ -14,12 +14,9 @@ export default {
       </MemoryRouter>
     ),
   ],
-} as ComponentMeta<typeof Link>;
+} as ComponentMeta<typeof Header>;
 
-const Template: ComponentStory<typeof Link> = (args) => <Link {...args} />;
+const Template: ComponentStory<typeof Header> = (args) => <Header {...args} />;
 
 export const Default = Template.bind({});
-Default.args = {
-  to: 'to',
-  label: 'label',
-};
+Default.args = {};

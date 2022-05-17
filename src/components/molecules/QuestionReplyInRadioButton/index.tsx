@@ -1,5 +1,5 @@
 import React from 'react';
-import RadioButton from 'components/atoms/RadioButton';
+import RadioButton from 'components/atoms/RadioButton/index';
 import RadioButtonType from 'types/radioButton';
 
 type Props = {

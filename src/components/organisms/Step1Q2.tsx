@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import DropDownList from 'components/atoms/DropDownList';
+import DropDownList from 'components/atoms/DropDownList/index';
 import questionLabels from 'utils/questionLabels';
 import DropDownListType from 'types/dropDownList';
 import { createYears, createMonths, createDays } from 'utils/createDateDropDownListOptions';

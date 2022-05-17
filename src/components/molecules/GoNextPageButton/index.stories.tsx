@@ -1,12 +1,12 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import Link from 'components/atoms/Link/index';
+import GoNextPageButton from 'components/molecules/GoNextPageButton/index';
 import { MemoryRouter } from 'react-router-dom';
 
 export default {
-  title: 'Atoms/Link',
-  component: Link,
+  title: 'molecules/GoNextPageButton',
+  component: GoNextPageButton,
   decorators: [
     (Story) => (
       <MemoryRouter>
@@ -14,12 +14,11 @@ export default {
       </MemoryRouter>
     ),
   ],
-} as ComponentMeta<typeof Link>;
+} as ComponentMeta<typeof GoNextPageButton>;
 
-const Template: ComponentStory<typeof Link> = (args) => <Link {...args} />;
+const Template: ComponentStory<typeof GoNextPageButton> = (args) => <GoNextPageButton {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
-  to: 'to',
-  label: 'label',
+  path: 'path',
 };

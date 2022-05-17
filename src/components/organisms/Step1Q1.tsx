@@ -1,5 +1,5 @@
 import React from 'react';
-import QuestionReplyInRadioButton from 'components/molecules/QuestionReplyInRadioButton';
+import QuestionReplyInRadioButton from 'components/molecules/QuestionReplyInRadioButton/index';
 import questionLabels from 'utils/questionLabels';
 import { menOrWomen } from 'utils/radioButtonOptions';
 

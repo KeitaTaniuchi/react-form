@@ -1,5 +1,5 @@
 import React from 'react';
-import TextArea from 'components/atoms/TextArea';
+import TextArea from 'components/atoms/TextArea/index';
 
 type Props = {
   idAndFor: string;
@@ -9,7 +9,7 @@ type Props = {
 const QuestionReplyInTextArea: React.FC<Props> = ({ idAndFor, label }) => {
   return (
     <>
-      <label htmlFor={idAndFor} className='block mb-2'>
+      <label htmlFor={idAndFor} className='mb-2 block'>
         {label}
       </label>
       <TextArea id={idAndFor} />

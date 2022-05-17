@@ -1,5 +1,5 @@
 import React from 'react';
-import QuestionReplyInTextArea from 'components/molecules/QuestionReplyInTextArea';
+import QuestionReplyInTextArea from 'components/molecules/QuestionReplyInTextArea/index';
 import questionLabels from 'utils/questionLabels';
 
 const Step3Q1: React.FC = () => {

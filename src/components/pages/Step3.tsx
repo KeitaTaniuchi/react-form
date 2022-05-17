@@ -1,8 +1,8 @@
 import React from 'react';
-import QuestionOuterBorder from 'components/organisms/QuestionOuterBorder';
+import QuestionOuterBorder from 'components/organisms/QuestionOuterBorder/index';
 import Step3Q1 from 'components/organisms/Step3Q1';
-import GoNextPageButton from 'components/molecules/GoNextPageButton';
-import BackPrevPageButton from 'components/molecules/BackPrevPageButton';
+import GoNextPageButton from 'components/molecules/GoNextPageButton/index';
+import BackPrevPageButton from 'components/molecules/BackPrevPageButton/index';
 
 const Step3 = () => {
   return (

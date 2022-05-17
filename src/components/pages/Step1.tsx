@@ -1,8 +1,8 @@
 import React from 'react';
-import QuestionOuterBorder from 'components/organisms/QuestionOuterBorder';
+import QuestionOuterBorder from 'components/organisms/QuestionOuterBorder/index';
 import Step1Q1 from 'components/organisms/Step1Q1';
 import Step1Q2 from 'components/organisms/Step1Q2';
-import GoNextPageButton from 'components/molecules/GoNextPageButton';
+import GoNextPageButton from 'components/molecules/GoNextPageButton/index';
 
 const Step1 = () => {
   return (
@@ -13,7 +13,7 @@ const Step1 = () => {
         </div>
         {<Step1Q2 />}
       </QuestionOuterBorder>
-      <div className=' flex mt-10 space-x-20 justify-center'>
+      <div className=' mt-10 flex justify-center space-x-20'>
         <GoNextPageButton path={'/step2'} />
       </div>
     </div>

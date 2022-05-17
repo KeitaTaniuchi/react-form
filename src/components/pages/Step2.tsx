@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import QuestionOuterBorder from 'components/organisms/QuestionOuterBorder';
+import QuestionOuterBorder from 'components/organisms/QuestionOuterBorder/index';
 import Step2Q1 from 'components/organisms/Step2Q1';
 import Step2Q2 from 'components/organisms/Step2Q2';
 import Step2Q3 from 'components/organisms/Step2Q3';
-import GoNextPageButton from 'components/molecules/GoNextPageButton';
-import BackPrevPageButton from 'components/molecules/BackPrevPageButton';
+import GoNextPageButton from 'components/molecules/GoNextPageButton/index';
+import BackPrevPageButton from 'components/molecules/BackPrevPageButton/index';
 
 const Step2 = () => {
   const [q1Checked, setQ1Checked] = useState<boolean>(false);
