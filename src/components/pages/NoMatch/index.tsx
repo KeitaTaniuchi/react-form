@@ -1,4 +1,4 @@
-const NoMatch = () => {
+const NoMatch: React.FC = () => {
   return <h2>このページは存在しません。</h2>;
 };
 

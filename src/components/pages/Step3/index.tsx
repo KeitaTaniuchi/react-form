@@ -1,10 +1,10 @@
 import React from 'react';
 import QuestionOuterBorder from 'components/organisms/QuestionOuterBorder/index';
-import Step3Q1 from 'components/organisms/Step3Q1';
+import Step3Q1 from 'components/organisms/Step3Q1/index';
 import GoNextPageButton from 'components/molecules/GoNextPageButton/index';
 import BackPrevPageButton from 'components/molecules/BackPrevPageButton/index';
 
-const Step3 = () => {
+const Step3: React.FC = () => {
   return (
     <div className='mx-auto mt-10 w-9/12'>
       <QuestionOuterBorder stepNumber={3} questionDetail={'ご相談内容を入力してください'}>

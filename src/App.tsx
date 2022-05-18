@@ -1,10 +1,10 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Header from 'components/organisms/Header/index';
-import Step1 from 'components/pages/Step1';
-import Step2 from 'components/pages/Step2';
-import Step3 from 'components/pages/Step3';
-import NoMatch from 'components/pages/NoMatch';
+import Step1 from 'components/pages/Step1/index';
+import Step2 from 'components/pages/Step2/index';
+import Step3 from 'components/pages/Step3/index';
+import NoMatch from 'components/pages/NoMatch/index';
 
 function App() {
   return (
