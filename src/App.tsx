@@ -1,24 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route } from 'react-router-dom';
+import Header from 'components/organisms/Header/index';
+import Step1 from 'components/pages/Step1/index';
+import Step2 from 'components/pages/Step2/index';
+import Step3 from 'components/pages/Step3/index';
+import NoMatch from 'components/pages/NoMatch/index';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <Header />
+      <Routes>
+        <Route path='/step1' element={<Step1 />} />
+        <Route path='/step2' element={<Step2 />} />
+        <Route path='/step3' element={<Step3 />} />
+        <Route path='*' element={<NoMatch />} />
+      </Routes>
     </div>
   );
 }
